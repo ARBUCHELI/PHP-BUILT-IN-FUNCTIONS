@@ -1,13 +1,8 @@
 <?php
-namespace Codecademy;
+echo("This works!\n");
 
-$first = "Welcome to the magical world of built-in functions.";
-  
-$second = 82137012983; 
+echo "This also works!\n";
 
-//Write your code below:
-echo gettype($first);
-echo gettype($second);
+//echo("This would NOT work", "\n");
 
-echo var_dump($first);
-echo var_dump($second);
+echo "Buuuut!", " ", "This", " ", "does!", "\n";
