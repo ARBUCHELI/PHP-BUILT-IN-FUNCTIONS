@@ -298,6 +298,143 @@ echo str_pad($b, 29, $d, $c);
 
 ==================================================================================================================================================================
 
+* Finding Functions
+-------------------
+	In order to find out about built-in functions (and other language features), you’ll want to get comfortable exploring the PHP documentation. The docs can get a little 
+	overwhelming—for example, this seemingly infinite index of PHP functions is pretty unwieldy.
+
+	The documentation contains some lists organized by topic: this is a list of PHP string functions and this is a list of math functions.
+
+	It’s often faster to use Google to navigate to the right part of the official documentation (php.net). For example, when I googled “PHP absolute value” the first result was a link 
+	to the abs() function in the PHP documentation.
+
+	Let’s practice discovering new functions!
+
+index.php
+---------
+<?php
+namespace Codecademy;
+
+// Write your code below:
+function convertToShout($str) {
+  return strtoupper($str)."!";
+}
+
+echo convertToShout("woah there, buddy");
+
+echo "\n";
+
+echo convertToShout("i just don't know");
+
+echo "\n";
+
+echo convertToShout("oh, ok, that's fine");
+
+echo "\n";
+
+echo convertToShout("it's nice to meet you");
+
+echo "\n";
+echo "\n";
+
+function tipGenerously($cost) {
+  return ceil($cost + ($cost * 0.2));
+}
+
+echo tipGenerously(100.00);
+
+echo "\n";
+
+echo tipGenerously(982.27);
+
+echo "\n";
+
+echo tipGenerously(15.67);
+
+echo "\n";
+
+echo tipGenerously(66.18);
+
+echo "\n";
+
+echo tipGenerously(21.65);
+
+echo "\n";
+echo "\n";
+
+function calculateCircleArea($diameter) {
+  $piValue = pi();
+  return $piValue*(($diameter/2) ** 2);
+}
+
+echo calculateCircleArea(25);
+echo "\n";
+echo calculateCircleArea(30);
+echo "\n";
+echo calculateCircleArea(872);
+echo "\n";
+echo calculateCircleArea(6);
+echo "\n";
+echo calculateCircleArea(29);
+
+==================================================================================================================================================================
+
+* Review
+--------
+	In this lesson, you learned that built-in functions are functions provided by PHP. You learned about several specific built-in functions, how to understand a function’s 
+	description in the documentation, and how to discover new built-in functions.
+
+	We’ve only started to scratch the surface of all of the functions built into the PHP language. As you continue to learn PHP, you’ll come across many useful built-in functions. As 
+	you write your own code, if a task you’re performing feels tedious but common, check to see if there’s a built-in function to do it for you!
+
+	One final note: Throughout this lesson, you may have noticed that PHP’s built-in functions often don’t follow the function naming conventions we outlined. PHP’s built-in functions 
+	aren’t named following a single convention—some are snake-cased while others have unseparated words. It’s quirks like this that can make PHP a bit frustrating to learn. Be patient 
+	with yourself as you get comfortable with the built-in functions most useful to you, and don’t hesitate to look things up.
+
+index.php
+---------
+<?php
+$string_var = "Check it out";
+echo strtoupper($string_var) . "!\n";
+
+echo ceil(8.873);
+echo "\n";
+  
+echo pi();
+echo "\n";
+
+echo str_pad("PHP", 30, "*^*-", STR_PAD_BOTH);
+echo "\n";
+
+echo getrandmax();
+echo "\n";
+
+echo rand();
+echo "\n";
+
+echo rand(1, 52);
+echo "\n";
+
+echo abs(-1287);
+echo "\n";
+
+echo round(8723.999);
+echo "\n";
+
+echo substr_count($string_var, " ");
+echo "\n";
+
+echo strrev("\n.pu ti peeK .taerg gniod er'uoY");
+
+echo strtolower("SOON, tHiS WILL Look NoRmAL.\n");
+
+echo str_repeat("There's no place like home.\n", 3);
+
+echo gettype($string_var);
+echo "\n";
+echo var_dump($string_var);
+
+
 
 
 
